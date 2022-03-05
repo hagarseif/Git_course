@@ -5,34 +5,40 @@
 a{
     text-decoration: none;
 }
-nav{
+nav {
     display: flex;
-    margin-left: 200px;
-}
-nav ul{
+    margin-left: 150px;
+  }
+  nav .main-menu {
     display: flex;
-    margin-left: 50px;
-}
-nav img{
-    margin-top: 15px;
-    height: 30px;
-}
-nav ul li{
-    list-style: none;
     margin-left: 20px;
+  
+  }
+  nav img {
     margin-top: 25px;
-}
-nav ul li a{
+    height: 30px;
+    margin-right: 20px;
+  }
+  nav .main-menu li {
+    list-style: none;
+    margin-left: 40px;
+    margin-top: 35px;
+    transition-duration: .2s;
+    padding-bottom: 30px;
+  
+  }
+  nav .main-menu li a {
     text-decoration: none;
     color: black;
     font-family: roboto;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
-}
-
-nav button{
-    margin-top: 20px;
-    margin-left: 70px;
+  }
+  
+  nav button {
+    margin-top: 25px;
+    height: 40px;
+    margin-left: 90px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -40,35 +46,75 @@ nav button{
     -o-border-radius: 20px;
     padding: 10px 40px;
     background-color: white;
-    border: solid 1px rgb(34, 33, 33,.3);
+    border: solid 1px rgb(34, 33, 33, 0.3);
     transition-duration: 400ms;
-}
-nav button:hover{
+  }
+  nav button:hover {
     border-color: rgb(79, 55, 237);
-
-}
-nav .icon{
+  }
+  nav .icon {
+    margin-top: 35px;
+    margin-left: 180px;
+  }
+  .sub-menu1{
+    display: none;
+  
+  }
+  nav .main-menu li:hover .sub-menu1{
+    display: block;
+    position: absolute;
+    background-color: #fff;
     margin-top: 25px;
-    margin-left: 150px;
-}
-/* end of navbar */
-.shop-cat{
+    margin-left: 0;
+  }
+  nav .main-menu li:hover .sub-menu1 ul{
+    display: block;
+    margin-top: 10px;
+    padding-left: 0;
+  
+  }
+  nav .main-menu > li:hover a{
+  color: #384aeb;
+  }
+  nav .main-menu > li:hover .sub-menu1 a{
+    color: black;
+  }
+  nav ul li:hover .sub-menu1 ul li{
+    width: 170px;
+    padding: 15px 25px;
+    border-bottom: 1px solid #eeeeee;
+    text-align: left;
+    background: transparent;
+    margin-left: 0px;
+    margin-top: 0;
+  }
+  nav ul li:hover .sub-menu1 ul li:last-child{
+    border-bottom:none;
+  }
+  nav ul li:hover .sub-menu1 ul li:hover{
+    background-color: rgb(56, 74, 235);
+  }
+  nav ul li:hover .sub-menu1 ul li:hover a{
+    color: white;
+  
+  }
+  /* end of navbar */
+  .shop-cat {
     background-color: #f1f6f7;
     height: 400px;
-    margin-top: 30px;
     text-align: center;
-}
-.shop-cat h1{
-    font-family: 'Oswald', sans-serif;
+  }
+  .shop-cat h1 {
+    font-family: "Oswald", sans-serif;
     font-size: 35px;
     padding-top: 150px;
-}
-.shop-cat p{
+  }
+  .shop-cat p {
     font-family: roboto;
     font-size: 15px;
     margin-top: 5px;
-}
-/* end of header */
+  }
+  /* end of header */
 .login-form{
     width: 80%;
     margin: auto;
